@@ -45,7 +45,7 @@
     margin-right: 5px;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 768px) {
     .header {
         flex-wrap: wrap;
     }
@@ -58,12 +58,28 @@
     }
 }
 
-@media(max-width: 420px) {
+@media(max-width: 425px) {
     .header_center {
         margin: auto;
     }
 
     .header_logo {
+        height: 20px;
         margin-bottom: 10px;
     }
+
+    .header_center {
+        padding: 5px;
+        height: 20px;
+    }
+
+    .header_center > input {
+        padding: 2px;
+    }
+
+    .header_right > .MuiAvatar-root {
+        width: 25px;
+        height: 25px;
+    }
+
 }

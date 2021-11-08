@@ -2,3 +2,10 @@
     display: flex;
     padding: 30px;
 }
+
+@media(max-width: 768px) {
+    .home_section {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+}

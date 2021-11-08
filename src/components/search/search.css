@@ -1,47 +1,63 @@
 .search {
     position: absolute;
     top: 35px;
-    left: 25%;
-    width: 75vw;
+    z-index: 700;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
 }
 
-.search > h2 {
+.search_peopleCount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+.search_peopleCount > h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 559px;
-    padding: 10px;
     background-color: white;
-    position: absolute;
-    left: 0;
-    top: 334px;
+    padding: 10px;
 }
 
-.search > input {
-    width: 539px;
-    padding: 20px;
-    position: absolute;
-    left: 0;
-    height: 30px;
-    top: 378px;
+.search_peopleCount > input {
+    padding: 10px;
     border: none;
 }
 
-.search > input:focus {
+.search_peopleCount > input:focus {
     outline-width: 0;
 }
 
-.search > button {
-    position: absolute;
-    left: 0;
-    top: 445px;
+.search_peopleCount > button {
     text-transform: inherit !important;
     background-color: #ff7779;
     color: white;
-    width: 579px;
 }
 
-.search > button:hover {
+.search_peopleCount > button:hover {
     background-color: white;
     color: #ff7779;
 }
+
+@media(max-width: 768px) {
+    .search > .rdrDateRangePickerWrapper {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search {
+        flex-direction: column-reverse;
+    }
+}
+
+/* @media(max-width: 375px) {
+    .search_peopleCount {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+} */
